@@ -10,9 +10,8 @@
 // below for splitting string
 // reference: https://www.geeksforgeeks.org/how-to-split-a-string-in-cc-python-and-java/
 #include <sstream>
-using namespace std;
-#include <iterator> // call specific points in list
-#include <tuple> // multiple return values
+#include <iterator>  // call specific points in list
+#include <tuple>  // multiple return values
 
 std::string createBorder(std::list<std::string> words) {
     list<std::string>::iterator pointer = words.begin();
@@ -108,7 +107,8 @@ int main() {
     std::cout << border << std::endl;
 
     list<std::string>::iterator pointer = finishedLines.begin();
-    for (int loopCounter = 0; loopCounter < finishedLines.size(); loopCounter++) {
+    for (int loopCounter = 0; loopCounter < finishedLines.size();
+    loopCounter++) {
         std::advance(pointer, loopCounter);
         std::cout << *pointer << std::endl;
     }
